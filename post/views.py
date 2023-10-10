@@ -3,5 +3,5 @@ from .models import *
 from django.views import generic
 
 # Create your views here.
-class PostList(generic.ListView):
+class BrandList(generic.ListView):
     model  = Post
