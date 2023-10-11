@@ -1,8 +1,8 @@
 from django.urls import path
-from.views import BrandList
+from.views import BrandList 
 
 
 urlpatterns = [
-    path('',BrandList.as_view())
+    path('brand/',BrandList.as_view())
     
 ]
