@@ -13,4 +13,5 @@ def about(request):
     return render(request,'post/about.html',{})
 
 def home(request):
-    return render(request, 'post/home.html',{})     
+    brands = Post.objects.all()
+    return render(request, 'post/home.html',{'brands':brands})     
