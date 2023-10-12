@@ -5,3 +5,12 @@ from django.views import generic
 # Create your views here.
 class BrandList(generic.ListView):
     model  = Post
+    
+    
+    
+    
+def about(request):
+    return render(request,'post/about.html',{})
+
+def home(request):
+    return render(request, 'post/home.html',{})     
